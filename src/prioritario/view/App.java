@@ -21,23 +21,18 @@ public class App {
             } else if (opcao==3){
                 System.out.println(banco.desenfileirar());
             }
+            menu();
             banco.imprimir();
             opcao = scanner.nextInt();
         } while (opcao!=4);
 
-
-//        banco.addNormal();
-//        banco.addNormal();
-//        banco.addNormal();
-//        banco.addPrioritario();
-//        banco.desenfileirar();
     }
 
-    public static void menu(){
-        System.out.println("" +
+    private static void menu(){
+        System.out.println("\n" +
                 "1) Adicionar um prioritario\n" +
                 "2) Adicionar um normal\n" +
                 "3) Desenfileirar\n" +
-                "4) Sair");
+                "4) Sair\n");
     }
 }
